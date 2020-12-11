@@ -1,14 +1,22 @@
+
 body {
 	position: relative;
 	top: -3rem;
 }
+
+nav ul a:hover {
+	background-color: $card-link-color;
+	color: $off-black;
+}
+
 p {
 	font-size: 1.15em;
 }
-#header {
+header#header {
+	/*(
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: center; */
 }
 .input-field {
 	>label {
@@ -71,7 +79,7 @@ i.material-icons.prefix.active  {
 
   /***** These are to edit the thumb and the text inside the thumb *****/
   input[type=range] + .thumb {
-    background-color: #dedede;
+    background-color: $custom-grey;
   }
   input[type=range] + .thumb.active .value {
     color: $custom-color-red;

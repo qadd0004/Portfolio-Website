@@ -72,7 +72,7 @@
   transition: background-color .2s ease-out;
   cursor: pointer;
   &:hover {
-    background-color: $custom-color-red-dark;
+    background-color: $card-link-color;
     @extend .z-depth-1-half;
   }
 }
