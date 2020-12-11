@@ -11,38 +11,204 @@
     />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./portfolio.html">Portfolio</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+    <div role="banner">
+      <nav class="dark-red">
+        <div class="nav-wrapper container">
+          <h1>
+            <a href="#" class="brand-logo"> Mohsen Qaddoura </a>
+          </h1>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons">menu</i></a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li>
+              <a href="./index.html"
+                ><i class="material-icons left">home</i> Home</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html"
+                ><i class="material-icons left">folder_special</i> portfolio</a
+              >
+            </li>
+            <li>
+              <a href="./contact.html"
+                ><i class="material-icons left">mail_outline </i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <a href="./index.html"
+            ><i class="material-icons left">home</i> Home</a
+          >
+        </li>
+        <li>
+          <a href="./portfolio.html"
+            ><i class="material-icons left">folder_special</i> Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="./contact.html"
+            ><i class="material-icons left">email</i> Contact</a
+          >
+        </li>
       </ul>
-    </nav>
-    <header>
-      <img src="" alt="avatar" />
-      <h1>Portfolio</h1>
+    </div>
+    <header id="header">
+      <img src="./img/mohsen.png" alt="avatar" class="avatar" />
+      <h1 class="center-align">Portfolio</h1>
     </header>
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m7">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/sample-1.jpg" />
-              <span class="card-title">Card Title</span>
+    <div class="content row center-align">
+      <div class="col s12 m6 l4">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/random_quote_finder.png" />
+              </div>
+              <div class="card-content">
+                <p>
+                  This is a simple app that shows randomly selected quotes, but
+                  carefully chosen. Earlier versions of the app used publicly
+                  available databases of quotes that contained several unwise
+                  quotes!
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://codepen.io/mq1960/full/vLzBQY/" target="_blank"
+                  >Random Quote App</a
+                >
+              </div>
             </div>
-            <div class="card-content">
-              <p>
-                I am a very simple card. I am good at containing small bits of
-                information. I am convenient because I require little markup to
-                use effectively.
-              </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/mini_calculator.png" />
+              </div>
+              <div class="card-content">
+                <p>
+                  This is a demo mini calculator built using HTML, CSS,
+                  JavaScript. It's a design concept to show that CSS can be used
+                  to design almost photo-realistic UI tha have some asthmatic
+                  operations.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://codepen.io/mq1960/full/OMrNYe/" target="_blank"
+                  >Mini Calculator App</a
+                >
+              </div>
             </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/weather_app.jpg" />
+              </div>
+              <div class="card-content">
+                <p>
+                  This a simple current local weather app that uses OpenWeather
+                  API. OpenWeather is a team of IT experts and data scientists
+                  that has been practising deep weather data science since 2014.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://codepen.io/mq1960/full/grwbbz/" target="_blank"
+                  >Weather App</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/pomodoro_timer.png" />
+              </div>
+              <div class="card-content">
+                <p>
+                  The Pomodoro Technique is a time management method developed
+                  by Francisco Cirillo in the late 1980s. The technique uses a
+                  timer to break down study / work into intervals, traditionally
+                  25 minutes in length.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://codepen.io/mq1960/full/pbkKOE/" target="_blank"
+                  >Pomodoro Timer</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/instant_wikipedia_viewer.png" />
+              </div>
+              <div class="card-content">
+                <p>
+                  Wikipedia is a multilingual open-collaborative online
+                  encyclopedia created and maintained by a community of
+                  volunteer editors using a wiki-based editing system. This app
+                  is fun to use and stumble upon unexpected facts.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://codepen.io/mq1960/full/pyejRP/" target="_blank"
+                  >Instant Wikipedia Viewer</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l4">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-image">
+                <img src="./img/twitch_tv.jpg" />
+              </div>
+              <div class="card-content">
+                <p>
+                  Twitch is an American video live streaming service operated by
+                  Twitch Interactive. Introduced in June 2011 as a spin-off of
+                  the general-interest streaming Justin.tv.
+                </p>
+              </div>
+              <div class="card-action">
+                <a href="https://codepen.io/mq1960/full/PzGJPp" target="_blank"
+                  >Twitch TV App</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./js/materialize.min.js"></script>
+    <script>
+      M.AutoInit();
+    </script>
   </body>
 </html>

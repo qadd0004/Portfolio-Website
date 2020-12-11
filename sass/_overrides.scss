@@ -1,7 +1,78 @@
-header {
-  .headline {
-    margin: 0;
-    font-size: 2rem;
-    padding: 13px 0;
+body {
+	position: relative;
+	top: -3rem;
+}
+p {
+	font-size: 1.15em;
+}
+#header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.input-field {
+	>label {
+		font-size: 1.15em;
+		color: rgb(110, 110, 110);
+	}
+}
+label {
+	font-size: 1.15em;
+	color: rgb(110, 110, 110);
+}
+
+input[type=range] + .thumb{
+  top: 1.5em;
+  background-color: rgba(244, 67, 54, .70);
+}
+
+span.thumb.active {
+  color: $custom-color-red;
+}
+
+button {
+  .btn.waves-red.waves-ripple {
+    background-color: $custom-color-red; 
   }
 }
+
+button {
+	.btn.waves-red.waves-ripple:hover {
+	  background-color: red; 
+	}
+  }
+
+div.card-content {
+	p {
+		height: 12em;
+		max-height: 13.2em;
+		overflow: hidden;
+		max-width: 220px;
+	}
+}
+
+i.material-icons.prefix  {
+  color: $custom-color-red;
+}
+
+i.material-icons.prefix.active  {
+	color: $custom-color-red;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    background-color:$custom-color-red;
+  }
+  input[type=range]::-moz-range-thumb {
+    background-color: $custom-color-red;
+  }
+  input[type=range]::-ms-thumb {
+    background-color: $custom-color-red;
+  }
+
+  /***** These are to edit the thumb and the text inside the thumb *****/
+  input[type=range] + .thumb {
+    background-color: #dedede;
+  }
+  input[type=range] + .thumb.active .value {
+    color: $custom-color-red;
+  }
