@@ -8116,9 +8116,9 @@ header#header {
 }
 header#header img.avatar {
   display: block;
-  width: calc(100% / 2);
+  width: 50%;
   max-width: 215px;
-  height: calc(100% / 2);
+  height: 50%;
   max-height: 215px;
   padding: 0;
   margin: 0 auto;
