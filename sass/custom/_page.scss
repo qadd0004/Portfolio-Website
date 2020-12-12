@@ -5,15 +5,17 @@ body {
 }
 
 
-nav .brand-logo {
-    font-size: 1rem;
+nav {
+	.brand-logo {
+		font-size: 1rem;
+	}
+	h1 {
+		position: relative;
+		font-size: 1.4em;
+		top: 1em;
+	}
 }
 
-nav h1 {
-    position: relative;
-    font-size: 1.4em;
-    top: 1em;
-}
 
 header#header {
 	color: #fff;
@@ -53,10 +55,12 @@ section {
     background-color: $custom-color-red;
 }
 
-.introduction h2 {
-    font-size: 2em;
-    color: $custom-color-red;
-    margin: 2em 0;
+.introduction {
+	h2 {
+		font-size: 2em;
+		color: $custom-color-red;
+		margin: 2em 0;
+	}
 }
 
 h2 {
@@ -77,8 +81,12 @@ h2 {
     margin-right: 0.25em;
 }
 
-h2 + p {
-    text-align: left;
+h2 {
+	+ {
+		p {
+			text-align: left;
+		}
+	}
 }
 
 #portfolio.content.row.center-align.about.grey.lighten-4 {

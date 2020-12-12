@@ -30,9 +30,13 @@ label {
 	color: rgb(110, 110, 110);
 }
 
-input[type=range] + .thumb{
-  top: 1.5em;
-  background-color: rgba(244, 67, 54, .70);
+input[type=range] {
+	+ {
+		.thumb {
+			top: 1.5em;
+			background-color: rgba(244, 67, 54, .70);
+		}
+	}
 }
 
 span.thumb.active {
@@ -69,20 +73,24 @@ i.material-icons.prefix.active  {
 	color: $custom-color-red;
   }
 
-  input[type=range]::-webkit-slider-thumb {
-    background-color:$custom-color-red;
-  }
-  input[type=range]::-moz-range-thumb {
-    background-color: $custom-color-red;
-  }
-  input[type=range]::-ms-thumb {
-    background-color: $custom-color-red;
-  }
-
-  /***** These are to edit the thumb and the text inside the thumb *****/
-  input[type=range] + .thumb {
-    background-color: $custom-grey;
-  }
-  input[type=range] + .thumb.active .value {
-    color: $custom-color-red;
-  }
+  input[type=range] {
+	&::-webkit-slider-thumb {
+		background-color: $custom-color-red;
+	}
+	&::-moz-range-thumb {
+		background-color: $custom-color-red;
+	}
+	&::-ms-thumb {
+		background-color: $custom-color-red;
+	}
+	+ {
+		.thumb {
+			background-color: $custom-grey;
+		}
+		.thumb.active {
+			.value {
+				color: $custom-color-red;
+			}
+		}
+	}
+}
