@@ -4,9 +4,15 @@ body {
 	top: -3rem;
 }
 
-nav ul a:hover {
-	background-color: $card-link-color;
-	color: $off-black;
+nav {
+	ul {
+		a {
+			&:hover {
+				background-color: $card-link-color;
+				color: $off-black;
+			}
+		}
+	}
 }
 
 p {
@@ -45,12 +51,13 @@ button {
 	}
   }
 
-div.card-content {
-	p {
-		height: 12em;
-		max-height: 13.2em;
-		overflow: hidden;
-		max-width: 220px;
+
+
+  .card {
+	.card-content {
+		p {
+			height: 17rem;
+		}
 	}
 }
 

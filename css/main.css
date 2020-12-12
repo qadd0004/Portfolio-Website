@@ -4597,13 +4597,13 @@ small {
   border-radius: 0 0 2px 2px;
 }
 .card .card-action a:not(.btn):not(.btn-small):not(.btn-large):not(.btn-large):not(.btn-floating) {
-  color: #ffab40;
+  color: #a70000;
   margin-right: 24px;
   transition: color 0.3s ease;
   text-transform: uppercase;
 }
 .card .card-action a:not(.btn):not(.btn-small):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
-  color: #ffd8a6;
+  color: #ff0e0e;
 }
 .card .card-reveal {
   padding: 24px;
@@ -8144,7 +8144,7 @@ section p {
   background-color: #a70000;
 }
 
-.introduction h3 {
+.introduction h2 {
   font-size: 2em;
   color: #a70000;
   margin: 2em 0;
@@ -8196,7 +8196,7 @@ h2 + p {
 
   #portfolio.content.row.center-align.about.grey.lighten-4 {
     max-width: 80%;
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 0 auto;
     border-radius: 1em;
     background-color: #f5f5f5 !important;
@@ -8248,11 +8248,8 @@ button .btn.waves-red.waves-ripple:hover, button .waves-red.waves-ripple.btn-lar
   background-color: red;
 }
 
-div.card-content p {
-  height: 12em;
-  max-height: 13.2em;
-  overflow: hidden;
-  max-width: 220px;
+.card .card-content p {
+  height: 17rem;
 }
 
 i.material-icons.prefix {
