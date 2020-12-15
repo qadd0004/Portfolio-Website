@@ -97,14 +97,19 @@ i.material-icons.prefix.active  {
 
     
 @media only screen and (min-width: $medium-screen-up) {
-    main div#skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 1rem;
-	}
-	
-	main #illust {
-		position: relative;
-        top: -1.4rem;
+    main {
+		div#skills {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 1rem;
+		}
+		#illust {
+			position: relative;
+			top: -1.4rem;
+		}
+		.illust-parag {
+			position: relative;
+			top: -2.9rem;
+		}
 	}
 }
